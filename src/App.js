@@ -3,8 +3,8 @@ function App() {
   const expenses = [
     {
       id: 'e1',
-      title: 'Toilet Paper',
-      amount: 94.12,
+      title: 'mobile phone',
+      amount:1400,
       date: new Date(2020, 7, 14),
     },
     { id: 'e2',
