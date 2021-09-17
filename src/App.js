@@ -1,3 +1,5 @@
+
+import NewExpense from './NewExpense';
 import Expenses from './components/Expenses';
 import Card from './components/Card';
 

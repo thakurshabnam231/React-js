@@ -5,12 +5,10 @@ import './ExpenseItem.css';
 
 function ExpenseItem(props) {
   const[title,setTitle] = useState(props.title);
-  
-  const clickHandler = () => {
-    
-    setTitle('updated');
+  console.log('ExpensesItem evaluated vy react');
+ setTitle('updated');
     console.log(title);
-  };
+}; 
   return (
     <Card className='expense-item'>
       <ExpenseDate date={props.date} />
@@ -21,6 +19,6 @@ function ExpenseItem(props) {
       <button onClick={clickHandler}>change title</button>
     </Card>
   );
-}
+};
 
 export default ExpenseItem;
