@@ -6,7 +6,7 @@ const ExpenseForm = ()=>{
     const TitleEventlistener=()=>{
         console.log(target.event.value)
     };
-   const onSubmit=())=>{
+   const onSubmit=()=>{
        setNewItem()
 console.log('submitted')
     }
