@@ -1,5 +1,6 @@
 import React from 'react';
 import NewExpense from './components/NewExpense';
+import ExpenseFilter from './components/ExpenseFilter';
 import Expenses from './components/Expenses';
 import Card from './components/Card';
 
@@ -29,6 +30,7 @@ function App() {
   return (
     <div>
      <NewExpense/>
+     <ExpenseFilter/>
       <Expenses items={expenses} />
     </div>
   );
