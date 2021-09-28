@@ -4,6 +4,7 @@ import './Expenses.css';
 function Expenses(props) {
   return (
     
+    
     <div className="expenses">
       {props.items.map((expenses)=> {
        return <ExpenseItem
