@@ -1,19 +1,18 @@
 import React from 'react';
 import ExpenseForm from './ExpenseForm';
 import './NewExpense.css';
-import react from 'react';
-const NewExpense = () => {
-    const addEventHandler = (expenseData)=>
+const NewExpense = (props) => {
+    const ExpenseData = (expenseData)=>
     {
-        const addExpenseData = {
+        const data = {
             ...expenseData,
-              id: Math.random().toString()
+             
     };
-       console.log(addExpenseData);
+       props.addExpense(data);
     };
     return(
     <div className="new-expense">
-        <ExpenseForm onAddExpense={addEventHandler}/>
+        <ExpenseForm onAddForm={ExpenseData}/>
     </div>
     );
 };

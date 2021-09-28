@@ -3,7 +3,8 @@ import './ExpenseFilter.css'
 
 const ExpenseFilter=() => {
     return (
-        <div classNamee="expenses-filter">
+
+        <div className="expenses-filter">
             <div className="expenses-filter__control">
             <h1>Filter items</h1>
 <select >
@@ -16,6 +17,6 @@ const ExpenseFilter=() => {
           </div> 
         </div>
     )
-}
+};
 
 export default ExpenseFilter
