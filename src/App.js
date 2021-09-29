@@ -29,15 +29,21 @@ const expenses = [
 ];
 const App = () => {
   const [data, setExpenses] = useState(expenses);
+
+
   const addExpenseHandler = (newExpense) => {
-    setExpenses([newExpense, ...data])
+    setExpenses((prev)=>{
+      console.log("data",newExpense)
+      return [...prev,newExpense]
+    })
+    console.log("*******************")
   };
   return (
     <div>
       <NewExpense addExpense={addExpenseHandler} />
       <ExpenseFilter />
       <Card />
-      <Expenses items={expenses} />
+      <Expenses items={data} />
     </div>
   );
 }

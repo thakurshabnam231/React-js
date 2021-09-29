@@ -4,11 +4,9 @@ import './NewExpense.css';
 const NewExpense = (props) => {
     const ExpenseData = (expenseData)=>
     {
-        const data = {
-            ...expenseData,
-             
-    };
-       props.addExpense(data);
+        const data = {...expenseData};
+        props.addExpense(data);
+        
     };
     return(
     <div className="new-expense">

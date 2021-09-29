@@ -22,13 +22,12 @@ const ExpenseForm = (props) => {
 
   const onSubmit = (event) => {
         event.preventDefault();
-
         const expenseData = {
         enteredTitle:title,
         enteredAmount:amount,
         enteredDate:date,
         };
-        props.onAddForm();
+        props.onAddForm(expenseData);
   
     setTitle('');
     setAmount('');
